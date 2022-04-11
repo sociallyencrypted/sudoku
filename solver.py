@@ -1,4 +1,4 @@
-sclass Grid:
+class Grid:
     """represents a two-dimensional, positional Grid
     implemented through nested lists"""
 
@@ -160,7 +160,7 @@ while True:
     for i in range(9):
         while True:
             try:
-                ln = input("Enter row " + str(i) + ": ")
+                ln = input(f"Enter row {i+1}: ")
                 # ln = " ".join([str(x) for x in grid[i]])
                 if sudoku.addrow(ln):
                     break
