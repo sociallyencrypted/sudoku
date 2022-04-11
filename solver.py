@@ -1,7 +1,4 @@
-import traceback
-
-
-class Grid:
+sclass Grid:
     """represents a two-dimensional, positional Grid
     implemented through nested lists"""
 
@@ -172,7 +169,6 @@ while True:
                 raise
             except:
                 print("Invalid row, try again!")
-                traceback.print_exc()
 
     if sudoku.validateGrid():
         if sudoku.solve():
